@@ -32,6 +32,7 @@ https://user-images.githubusercontent.com/45401519/117774558-f2b8a800-b239-11eb-
 
 # Croquis
 Avant de réaliser la page du configurateur, j'ai rapidement réalisé des croquis pour m'aider à la conception de ce dernier.
+
 ![Croquis](https://media.discordapp.net/attachments/519799997534044170/840638629180080178/dronic_mockup.png?width=528&height=676)
 
 # Apparence du module
