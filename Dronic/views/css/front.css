@@ -1,0 +1,233 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+#ns_dronic_block_home {
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+    background: #fff;
+    padding: 1.563rem 1.25rem;
+    margin-bottom: 1.563rem;
+}
+
+.dronic_content {
+    position: relative;
+    left:-250px;
+    background-color: white;
+    height: 800px;
+    width: 1600px
+}
+
+
+.grid-container {
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
+    grid-template-rows: 0.3fr 0.3fr 2.4fr;
+    gap: 0px 0px;
+    grid-template-areas: "Header Header Header Header" "Filter Filter Filter Side" "Content Content Content Side";
+
+}
+
+.Header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    background-color: white;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: Header;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Side {
+    grid-area: Side;
+    background-color: #e1e0e0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    background-color: #cccccc;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: Filter;
+}
+
+.Content {
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: Content;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.grid-container * {
+    position: relative;
+}
+
+.grid-container *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.all {
+    background: #dfe6e9;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 8px 0px rgb(0 0 0 / 20%);
+
+}
+
+.card-drone {
+    background-color: #333333;
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(61deg, #424242 48%, #787878 100%);
+    border-radius: 0px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(13deg, #eb7c50 14%, #ff7f50 100%);
+}
+
+#scrollbar::-webkit-scrollbar-track {
+    background: #b5b5b5;
+    border-radius: 0px;
+    box-shadow: inset -30px 0px 12px B5B5B5;
+}
+
+.wrapper {
+    display: grid;
+    height: auto;
+    width: 95%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(35vh, auto);
+    grid-gap: 1vh;
+}
+
+.Billing {
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffff;
+    justify-content: space-between;
+    box-shadow: -4px -8px 21px 1px rgba(0,0,0,0.07);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.price {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:#333333
+}
+.pay {
+    width: 40%;
+    height: 50%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+
+}
+
+.button6 {
+    padding: 0.7em 1.4em;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    background-color: #dea48e;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+    text-align: center;
+}
+
+.button6:active {
+    top: 0.1em;
+
+}
+
+
+.logo-d {
+    position: absolute;
+    margin-right: 3%;
+
+}
+
+.logo-annonce:hover{
+    transform: scale(1.12);
+}
+
+.logo:hover{
+    transform: scale(1.12);
+}
+.logo {
+    transition: .3s;
+}
+
+.logo-annonce{
+    transition: .3s;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
