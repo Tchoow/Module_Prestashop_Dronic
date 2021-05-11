@@ -1,8 +1,8 @@
 # Description
 Le module PrestaShop **Dronic©** permet très facilement d'ajouter à votre site Prestashop un configurateur de drone FPV !
 Ce module utilise des Hooks, plus précisément **LeftColumn** pour l'intégration sur l'ensemble des pages et **Header** pour la gestion du CSS et js du module.
-Une fois le module ajouté, il intègre une nouvelle card sur le côté de vos pages.
-Ces dernières redirigent automatiquement une page générée par le Dronic.
+Une fois le module ajouté, il intègre automatiquement une nouvelle card sur le côté de vos pages.
+Ces dernières redirigent automatiquement sur une page générée par Dronic.
 
 *Vous trouverez ci-dessous une courte présentation du module en vidéo.*
 
